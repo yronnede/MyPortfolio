@@ -97,3 +97,11 @@ body {
     font-size: 60px;
     margin: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 50px;
+}
