@@ -5,7 +5,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* NAVBAR */
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -25,7 +24,6 @@ body {
     font-size: 18px;
 }
 
-/* MENU */
 .navigation ul {
     list-style: none;
     display: flex;
@@ -45,7 +43,7 @@ body {
     color: #45629e;
 }
 
-/* HERO SECTION */
+
 .hero {
     text-align: left;
     padding: 127px 20px 360px 20px;
@@ -67,7 +65,6 @@ body {
     text-align: left;
 }
 
-/* BUTTON */
 .hero button {
     padding: 10px 20px;
     border: none;
@@ -85,12 +82,12 @@ body {
 }
 
 .dashboard {
-    height: 600px;              /* full screen height */
+    height: 600px;              
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* top */
-    align-items: center;         /* center horizontally */
-    padding-top: 80px;           /* space for navbar */
+    justify-content: flex-start; 
+    align-items: center;         
+    padding-top: 80px;
     text-align: center;
 }
 
