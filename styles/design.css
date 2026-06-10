@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: "Iosevka Charon", monospace;
-    background: #ffffff;
-    color: #111;
+    background: linear-gradient(to right, #111827, #1b253d);
+    scroll-behavior: smooth;
 }
 
 /* NAVBAR */
@@ -11,13 +11,16 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.10);
     position: sticky;
     top: 0;
-    background: white;
+    background: linear-gradient(to right, #111827, #1b253d);
+    /*background-color: #111827;*/
+    z-index: 1000;
 }
 
 .logo {
+    color: white;
     font-weight: 700;
     font-size: 18px;
 }
@@ -26,45 +29,49 @@ body {
 .navigation ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 100px;
     margin: 0;
     padding: 0;
 }
 
 .navigation a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 500;
     transition: 0.3s;
 }
 
 .navigation a:hover {
-    color: #4dc1c5;
+    color: #45629e;
 }
 
 /* HERO SECTION */
 .hero {
-    text-align: center;
-    padding: 120px 20px;
+    text-align: left;
+    padding: 127px 20px 360px 20px;
+    background-image: url("/assets/Main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero h1 {
+    color: white;
     font-size: 40px;
     margin-bottom: 10px;
 }
 
 .hero p {
     max-width: 600px;
-    margin: 0 auto 20px;
     line-height: 1.6;
-    color: #444;
+    color: #fff;
+    text-align: left;
 }
 
 /* BUTTON */
 .hero button {
     padding: 10px 20px;
     border: none;
-    background: #4dc1c5;
+    background: #273859;
     color: white;
     font-weight: bold;
     border-radius: 8px;
@@ -73,6 +80,23 @@ body {
 }
 
 .hero button:hover {
-    background: #3aa9ad;
+    background: #45629e;
     transform: translateY(-2px);
+}
+
+.dashboard {
+    height: 600px;              /* full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* top */
+    align-items: center;         /* center horizontally */
+    padding-top: 80px;           /* space for navbar */
+    text-align: center;
+}
+
+.dashboard h1 {
+    color: rgb(229, 223, 223);
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0;
 }
