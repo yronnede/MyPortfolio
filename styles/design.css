@@ -8,14 +8,12 @@ body {
 .navigation {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 15px 40px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.10);
     position: sticky;
     top: 0;
     background: linear-gradient(to right, #111827, #1b253d);
-    /*background-color: #111827;*/
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 
 .logo {
@@ -45,27 +43,34 @@ body {
 
 
 .hero {
-    text-align: left;
-    padding: 127px 20px 360px 20px;
-    background-image: url("../assets/Main.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 127px 0 0 0;
 }
 
-.hero h1 {
+.hero img {
+    box-shadow: 10px 10px 10px #1b253d;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
     color: white;
     font-size: 40px;
     margin-bottom: 10px;
 }
 
-.hero p {
+.hero-content p {
     max-width: 600px;
     line-height: 1.6;
     color: #fff;
     text-align: left;
 }
 
-.hero button {
+.hero-content button {
     padding: 10px 20px;
     border: none;
     background: #273859;
@@ -76,7 +81,7 @@ body {
     transition: 0.3s;
 }
 
-.hero button:hover {
+.hero-content button:hover {
     background: #45629e;
     transform: translateY(-2px);
 }
@@ -84,11 +89,9 @@ body {
 .dashboard {
     height: 600px;              
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start; 
-    align-items: center;         
+    justify-content: center;
+    align-items: flex-start;         
     padding-top: 80px;
-    text-align: center;
 }
 
 .dashboard h1 {
@@ -103,5 +106,5 @@ html {
 }
 
 section {
-    scroll-margin-top: 50px;
+    scroll-margin-top: auto;
 }
